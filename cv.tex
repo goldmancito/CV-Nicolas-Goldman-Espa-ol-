@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
+\usepackage[absolute]{textpos}
 \usepackage{marvosym}
 \usepackage{fontspec} 					%for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
@@ -54,7 +55,9 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-
+\begin{textblock}{4}(4.8,-6.15) % {〈hsize〉}(〈hpos〉,〈vpos〉) <==============
+\includegraphics[width=2.75cm]{foto.jpg}
+\end{textblock}
 %WATERMARK TEST [**not part of a CV**]---------------
 %\font\wm=''Baskerville:color=787878'' at 8pt
 %\font\wmweb=''Baskerville:color=FF1493'' at 8pt
@@ -73,12 +76,13 @@ ItalicFont = Fontin-Italic.otf
 \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-------------
-\par{\centering
+\par{
 		{\Huge Nicolás \textsc{Goldman}
 	}\bigskip\par}
 
 %--------------------SECTIONS-----------------------------------
 %Section: Personal Data
+\bigskip
 \section{Detalles personales}\smallskip
 
 \begin{tabular}{rl}
@@ -94,7 +98,7 @@ ItalicFont = Fontin-Italic.otf
 \begin{tabular}{rl}	
 \textsc{Junio} 2020 & \textbf{Ingeniero Químico,  Universidad de Buenos Aires}\\
 &\small\textsc{Promedio de la Carrera:} 7.05/10\\
-&\small\textsc{Progreso:} Finalizando la tesis  \\
+&\small\textsc{Progreso:} Cursadas terminadas - Finalizando la tesis  \\
 & Tesis: ``Los circuitos cerrados para transferencia de energía, aislación y\\& experimentación en centrales termoeléctricas y plantas piloto.\\& Aspectos conceptuales y de diseño'' | \small Director: Dr. Ing. Mauricio \textsc{Chocrón}\\\\
 \textsc{Dic.} 2013& \textbf{Escuela Secundaria ``Escuela de La Costa''}, Puerto Madryn\\ &\small\textsc{Promedio Final:} 9.89/10
 \end{tabular}\smallskip
@@ -103,18 +107,19 @@ ItalicFont = Fontin-Italic.otf
 \section{Experiencia Laboral}\smallskip
 \begin{tabular}{r|p{11cm}}
  %\emph{Current} & Thesis Student \textsc{University of Buenos Aires} 
-\textsc{Verano 2020} & Pasante de Laboratorio en \textsc{Universidad Hebrea de Jerusalén}\\& \emph{Institute for Drug Research}\\&\footnotesize{Desarrollo de sistemas de liberación controlada de drogas basados en polímeros biodegradables. Revisión de literatura y planificación de experimentos.}\\\multicolumn{2}{c}{}\\
- 
- \textsc{Actual}&Tesista de Grado en \textsc{CNEA -- Comisión Nacional de Energía Atómica}  \\(2 año)&\footnotesize{Estudio y desarrollo de un circuito cerrado de transferencia de calor, un circuito secundario de un reactor PWR y de una planta de desalinización. Análisis termodinámico de los procesos.}
+\textsc{Actual}&Tesista de Grado en \textsc{CNEA -- Comisión Nacional de Energía Atómica}  \\(2 años)&\footnotesize{Estudio y desarrollo de un circuito cerrado de transferencia de calor, un circuito secundario de un reactor PWR y de una planta de desalinización. Análisis termodinámico de los procesos.}
  \\&\footnotesize{\emph{Presentación de poster}: Jornada de Tesistas del Departamento de Ingeniería Química}\\\multicolumn{2}{c}{} \\
+
+\textsc{Dic.-Feb. 2020} & Pasante de Laboratorio en \textsc{Universidad Hebrea de Jerusalén}\\(2 meses) & \emph{Institute for Drug Research}\\&\footnotesize{Desarrollo de sistemas de liberación controlada de drogas basados en polímeros biodegradables. Planificación y ejecución de experimentos.}\\\multicolumn{2}{c}{}\\
+ 
 % \textsc{Jul-Oct 2008} & 1\textsuperscript{st} year Analyst at \textsc{Lehman Brothers}, London \\&\emph{Commodities Structured Trading}\\&\footnotesize{Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (\textit{ags, oils, precious} and \textit{base metals}), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping.}\\\multicolumn{2}{c}{} \\
-\textsc{Verano 2012} & Pasante de Secundaria en \textsc{Aluar Aluminio Argentino}\\(2 meses)& \emph{Procesos Electroquímicos}\\&\footnotesize{Asistencia en un proyecto para la recuperación de alúmina alrededor de los reactores. Preparación y puesta en condiciones de las alfombras para la recuperación de la alúmina.}
+\textsc{Dic.-Feb. 2012} & Pasante en \textsc{Aluar Aluminio Argentino}\\(2 meses)& \emph{Procesos Electroquímicos}\\&\footnotesize{Asistencia en proyecto para la recuperación de alúmina alrededor de los reactores. Preparación y puesta en condiciones de las alfombras para la recuperación de la alúmina.}
 \end{tabular}\smallskip
 
 %Section: Scholarships and additional info
 \section{Becas y Certificados}\smallskip
 \begin{tabular}{rl}
- \textsc{Mayo} 2014 & “Reconocimiento de Honor” y beca de la Honorable Legislatura del Chubut por\\&graduarme de la secundaria con uno de los mejores diez promedios\\&de la provincia.\\&
+ \textsc{Mayo} 2014 & “Reconocimiento de Honor” y beca de la Honorable Legislatura del Chubut\\& por finalizar la secundaria con el tercer mejor promedio de la provincia.\\&
 \href{http://www.legischubut.gov.ar/hl/index.php/diario-de-sesiones/28-ano-2014/257-sesion-1378-07-05-14-especial}{| \footnotesize \underline{Enlace a la sesión legislativa}}\\\\
 \textsc{Julio} 2013 & {\textsc{Cambridge English:} Certificate of Proficiency in English (CPE) | \small Grade A}
 \end{tabular}\smallskip
@@ -123,7 +128,7 @@ ItalicFont = Fontin-Italic.otf
 \section{Idiomas}\smallskip
 \begin{tabular}{rl}
  %\textsc{Español:}&Native\\
-\textsc{Inglés:}&Competencia profesional completa (nivel C2)\\
+\textsc{Inglés:}&Competencia profesional plena (nivel C2)\\
 \textsc{Alemán:}&Básico (nivel A1) 
 \end{tabular}\smallskip
 
@@ -134,7 +139,7 @@ ItalicFont = Fontin-Italic.otf
 \end{tabular}\smallskip
 
 \section{Actividades extracurriculares}\smallskip
-Gimasia funcional, Taekwondo (cinturón negro), Idioma Alemán\\
+Entrenamiento funcional, Taekwondo (cinturón negro), Idioma Alemán\\
 
 
 \end{document}
